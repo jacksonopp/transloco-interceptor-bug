@@ -1,0 +1,17 @@
+<ng-container *transloco="let t;">
+  <p>{{t('test')}}</p>
+  <fieldset (change)="changeLang($event)">
+    <legend>Select a maintenance drone:</legend>
+
+    <div>
+      <input type="radio" id="en" name="drone" value="en"
+             checked>
+      <label for="en">en</label>
+    </div>
+
+    <div>
+      <input type="radio" id="es" name="drone" value="es">
+      <label for="es">es</label>
+    </div>
+</fieldset>
+</ng-container>
